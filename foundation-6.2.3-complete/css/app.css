@@ -13,6 +13,22 @@
 			font-size: 3.8rem;
 		}
 		
+		.head {
+			background-color:#444; 
+			color: #fff; 
+			padding-left: 1rem;
+		}
+		
+		.head h1{
+			padding: 3rem 0; 
+			margin-top: 0;
+		}
+		
+		.head .fi-arrow-left{
+			color: #fff; 
+			font-size: 6rem;
+		}
+		
 		.bg-white{
 			background-color: #fff;
 		}

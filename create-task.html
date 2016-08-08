@@ -12,36 +12,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	
-    <style>
-    
-        form input, form textarea{
-            font-size: 3.5rem !important;
-            padding: 3.8rem 0 4.4rem 3.8rem !important;
-            margin-top: 3rem !important;
-        }
-        
-        form textarea{
-        	padding-top: 0;
-        }
-        
-        form .button {
-            margin-top: 3rem;
-        }
-        
-        button{
-            font-size: 3rem !important;
-        }
-
-        h1{
-            margin-top: 6rem;
-        }
-        
-        p{
-            font-size: 3rem;
-        }
-        
-    </style>
-    
 </head>
 
 <body>
@@ -53,20 +23,22 @@
     <h1> New task </h1>
 
     <form class="bg-white radius" style="padding: 1.2rem">
-		
-	    <input type="text" placeholder="Title" />
 	
-	    <input type="text" placeholder="Course" />
-    
-	    <input type="text" placeholder="Due date" />
-	    
-	    <textarea name="task-details" placeholder="Task details ... "></textarea>
-    
-    	<button class="button expanded radius text-center"> Create task </button>
-		
-    </form>
-    
+	<label> Task name </label>	
+	<input type="text" placeholder="Complete essay" />
+	
+	<label> Course code </label>
+	<input type="text" placeholder="CSC108" />
+	
+	<label> Due date </label>
+	<input type="text" placeholder="August 16, 2016" />
+	
+	<label> Estimate time for completion </label>
+	<input type="text" placeholder="5 hours" />
+	
+    <button class="button expanded radius text-center"> Create task </button>
 
+    </form>
     
   </div>
 
@@ -74,8 +46,8 @@
 
 <footer class="main-nav">
 	<p class="align-bottom text-center">
-		<a href="../home/home.html"><i class="fi-home"></i></a>
-		<a href="../calendar/Calendar.html"><i class="fi-calendar active-icon"></i></a>
+		<a href="home.html"><i class="fi-home"></i></a>
+		<a href=""><i class="fi-calendar active-icon"></i></a>
 		<a href=""><i class="fi-book"></i></a>
 		<a href=""><i class="fi-torsos-all"></i></a>
 		<a href=""><i class="fi-torso"></i></a>
