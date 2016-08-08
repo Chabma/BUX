@@ -6,9 +6,9 @@
 	<link rel="stylesheet" href="../foundation-6.2.3-complete/css/foundation.min.css"/>
 	<link rel="stylesheet" href="../foundation-6.2.3-complete/css/app.css"/>
 	<link rel="stylesheet" href="../foundation-icons/foundation-icons.css"/>
-	<script src="../js/vendor/jquery.js"></script>
-	<script src="../js/vendor/foundation.min.js"></script>
 	
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	
 	<style type="text/css">
@@ -25,7 +25,7 @@
     font-size: 16px;
     z-index: 99;
     margin-top: 2px;
-    max-width: 200px;
+    max-width: 500px;
 }
 
 .ui-autocomplete>*:first-child {
@@ -33,7 +33,7 @@
 }
 
 .ui-autocomplete li {
-    font-size: 0.875em;
+    font-size: 3em;
     cursor: pointer;
     line-height: 1.125em;
     margin: 0;
@@ -44,6 +44,25 @@
     padding: 0.3125em 0.625em;
     color: #555;
 }
+
+form input{
+    font-size: 3.5rem !important;
+	padding: 3.8rem 0 4.4rem 3.8rem !important;
+    margin-top: 3rem !important;
+}
+
+form .button {
+    margin-top: 3rem;
+}
+
+button{
+    font-size: 3rem !important;
+}
+
+h1{
+    margin-top: 6rem;
+}
+
 
 /*
 .ui-autocomplete:before {
@@ -75,19 +94,19 @@
 }*/
 
 input::-webkit-input-placeholder { /* WebKit browsers */
-  line-height: 1.5em;
+  line-height: 1.2em;
   padding-left: 0.5rem;
 }
 input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  line-height: 1.5em;
+  line-height: 1.2em;
   padding-left: 0.5rem;
 }
 input::-moz-placeholder { /* Mozilla Firefox 19+ */
-  line-height: 1.5em;
+  line-height: 1.2em;
   padding-left: 0.5rem;
 }
 input:-ms-input-placeholder { /* Internet Explorer 10+ */
-  line-height: 1.5em;
+  line-height: 1.2em;
   padding-left: 0.5rem;
 }
 
@@ -96,14 +115,14 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 .find-by input{
-	padding-left: 40px;
+	padding-left: 6rem !important;
 }
 
 .find-by i{
 	position: absolute;
-	left: 12px;
-	top: 12px;
-	
+	left: 30px;
+	top: 28px;
+	font-size: 4rem;
 }
 
 	</style>
@@ -122,15 +141,17 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 
 	<div class="find-by">
 	  <i class="fi-torso-female" style="color: #ddd"></i>
-      <input id="add-by-name" placeholder="Type student's name" type="text" />
+      <input id="add-by-name" placeholder="Enter classmate's name" type="text" />
     </div>
+    
+    <p class="text-center align-bottom" style="font-size: 3rem; color: #333"> or </p>
     
     <div class="find-by">
       <i class="fi-book" style="color: #ddd"></i>
-      <input id="add-by-course" placeholder="Type course code" type="text" />
+      <input id="add-by-course" placeholder="Enter course code" type="text" />
 	</div>
 	
-    <button class="button expanded radius text-center"> Add friend </button>
+    <button class="button expanded radius text-center"> Add classmate </button>
 
     </form>
     

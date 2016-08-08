@@ -1,7 +1,16 @@
 /*Custom CSS styles for our app */
 
-		body{
+    	body{
 			background-color: #eee;
+		}
+		
+		h1{
+			font-size: 5rem;
+			margin: 1.5rem 0 1.5rem 0rem;
+		}
+		
+		h2{
+			font-size: 3.8rem;
 		}
 		
 		.bg-white{
@@ -13,18 +22,35 @@
 		}
 		
 		.task-prompt{
-			border: 1px solid rgba(29, 80, 141, 0.52);
+			/*border: 1px solid rgba(29, 80, 141, 0.52);*/
 			border: none;
-			padding: 0;
-			margin-bottom: 1.6rem;
+			font-size: 2.4rem;
+			padding: 2.8rem 0;
+			margin: 2.6rem 0;
 			/*border-bottom-width: 1px;
 			border-bottom-style: solid;
 			border-bottom-color: rgba(29, 80, 141, 0.52);*/
 		}
 		
 		.task-prompt-body{
-			padding: 1.4rem 1rem 0 1rem;
+			padding: 1.6rem 1.6rem 0 1.6rem;
+			border: 2px solid #ccc; 
+			margin: 0 auto;
+			width: 85%; 
 		}
+		
+		.task-prompt-body .button.primary{
+			border-bottom-width: 4px; 
+			border-bottom-color: #186aa0;
+            margin-top: 3rem;
+        }
+        
+        .task-prompt-body .button.success{
+        	border-bottom-width: 4px; 
+        	border-bottom-color: darkcyan;
+            margin-top: 1.4rem;
+        	margin-bottom: 3rem;
+        }
 		
 		.task-prompt h2{
 			background-color: #1d508d; 
@@ -35,16 +61,17 @@
 		
 		
 		.task-prompt .task-name{
-			font-size: 1.4rem;
 			/*background-color: #efefef;
     		padding: 0.5rem;*/
     		line-height: 1.1;
     		margin-bottom: 0.8rem;
+    		padding: 1rem 0;
 		}
 		
 		.task-name a,
 		.task-name a:visited{
 			color: #1d508d;
+			font-size: 3.8rem;
 		}
 		
 		.task-name a:hover,
@@ -54,9 +81,9 @@
 		
 		.task-prompt .button{
 			margin: 0; 
-			margin-top: 0.5rem;
+			margin-top: 1.2rem;
 			width: 100%;
-			font-size: 1.1rem;
+			font-size: 2.8rem;
 		}
 		
 		.align-top{
@@ -75,15 +102,20 @@
 		
 		.class-activity section{
 			border-bottom: 1px solid #ddd;
-			margin-bottom: 1.4rem;
+			margin-bottom: 1.6rem;
+			padding-bottom: 1.6rem;
+		}
+		
+		.class-activity i{
+			margin-right: 0.7rem;
 		}
 		
 		.main-nav p{
-			font-size: 2rem;
+			border-top: 1px solid #444;
+			font-size: 5rem;
 			position: fixed; 
 			bottom: 0; 
 			width:100%; 
-			height: 50px; 
 			background-color: white;
 		}
 		
@@ -101,44 +133,47 @@
 			margin-left: 0;
 		}
 		
+		.main-nav .active-icon{
+			color: #1585cf;
+		}
 		
 		i.icon {
 		  display: inline-block;
-		  width: 32px;
-		  height: 32px;
+		  width: 70px;
+		  height: 70px;
 		  background: #aaa;
 		  text-align: center;
 		  position: absolute;
 		  left: 0;
 		}
 		i.icon::before {
-		  content: "";
-		  display: block;
-		  background: #ddd;
-		  width: 10px;
-		  height: 10px;
-		  border-radius: 1000px;
-		  position: absolute;
-		  left: 50%;
-		  margin-left: -5px;
-		  top: 5px;
+    		content: "";
+    		display: block;
+    		background: #ddd;
+    		width: 25px;
+    		height: 25px;
+    		border-radius: 1000px;
+    		position: absolute;
+    		left: 50%;
+    		margin-left: -12px;
+    		top: 11px;
 		}
 		i.icon::after {
-		  content: "";
-		  display: block;
-		  background: #ddd;
-		  width: 20px;
-		  height: 10px;
-		  border-radius: 1000px 1000px 0 0;
-		  display: block;
-		  position: absolute;
-		  left: 50%;
-		  margin-left: -10px;
-		  top: 15px;
+    		content: "";
+    		display: block;
+    		background: #ddd;
+    		width: 40px;
+    		height: 20px;
+    		border-radius: 1000px 1000px 0 0;
+    		display: block;
+    		position: absolute;
+    		left: 50%;
+    		margin-left: -19px;
+    		top: 35px;
 		}
 
 		.byline {
-		  padding-left: 40px;
+		  padding-left: 90px;
 		  position: relative;
 		  margin-bottom: 15px;
 		  margin-top: 10px;
@@ -163,15 +198,14 @@
 		  margin-left: 30px;
 		}
 		
-		.classmate{
+		.class-activity .classmate{
+			font-size: 2rem;
 			margin-bottom: 0.8rem;
 		}
 		
-		.ui-helper-hidden-accessible{ display:none }
-		
-		@media screen and (max-width: 40em){
-			h1{
-				font-size: 2rem;
-				margin: 1.5rem 0 1.5rem 0rem;
-			}
+		.class-activity ul{
+			font-size: 1.8rem;
 		}
+		
+		.ui-helper-hidden-accessible{ display:none }
+	
