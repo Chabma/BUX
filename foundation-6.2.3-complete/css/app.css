@@ -1,0 +1,177 @@
+/*Custom CSS styles for our app */
+
+		body{
+			background-color: #eee;
+		}
+		
+		.bg-white{
+			background-color: #fff;
+		}
+		
+		.radius {
+			border-radius: 3px;
+		}
+		
+		.task-prompt{
+			border: 1px solid rgba(29, 80, 141, 0.52);
+			border: none;
+			padding: 0;
+			margin-bottom: 1.6rem;
+			/*border-bottom-width: 1px;
+			border-bottom-style: solid;
+			border-bottom-color: rgba(29, 80, 141, 0.52);*/
+		}
+		
+		.task-prompt-body{
+			padding: 1.4rem 1rem 0 1rem;
+		}
+		
+		.task-prompt h2{
+			background-color: #1d508d; 
+			color: white;
+			margin-top: 0;
+			padding: 1rem;
+		}
+		
+		
+		.task-prompt .task-name{
+			font-size: 1.4rem;
+			/*background-color: #efefef;
+    		padding: 0.5rem;*/
+    		line-height: 1.1;
+    		margin-bottom: 0.8rem;
+		}
+		
+		.task-name a,
+		.task-name a:visited{
+			color: #1d508d;
+		}
+		
+		.task-name a:hover,
+		.task-name a:active{
+			color: rgba(33, 79, 134, 0.83);
+		}
+		
+		.task-prompt .button{
+			margin: 0; 
+			margin-top: 0.5rem;
+			width: 100%;
+			font-size: 1.1rem;
+		}
+		
+		.align-top{
+			margin-top: 0 !important;
+			padding-top: 0 !important;
+		}
+		
+		.align-bottom{
+			margin-bottom: 0 !important;
+			padding-bottom: 0 !important;
+		}
+		
+		.overflow-hidden{
+			overflow: hidden;
+		}
+		
+		.class-activity section{
+			border-bottom: 1px solid #ddd;
+			margin-bottom: 1.4rem;
+		}
+		
+		.main-nav p{
+			font-size: 2rem;
+			position: fixed; 
+			bottom: 0; 
+			width:100%; 
+			height: 50px; 
+			background-color: white;
+		}
+		
+		.main-nav a{
+			color: #999;
+			margin-left: 12%;
+		}
+		
+		.main-nav a:hover,
+		.main-nav a:active{
+			color: #1585cf;
+		}
+		
+		.main-nav a:first-child{
+			margin-left: 0;
+		}
+		
+		
+		i.icon {
+		  display: inline-block;
+		  width: 32px;
+		  height: 32px;
+		  background: #aaa;
+		  text-align: center;
+		  position: absolute;
+		  left: 0;
+		}
+		i.icon::before {
+		  content: "";
+		  display: block;
+		  background: #ddd;
+		  width: 10px;
+		  height: 10px;
+		  border-radius: 1000px;
+		  position: absolute;
+		  left: 50%;
+		  margin-left: -5px;
+		  top: 5px;
+		}
+		i.icon::after {
+		  content: "";
+		  display: block;
+		  background: #ddd;
+		  width: 20px;
+		  height: 10px;
+		  border-radius: 1000px 1000px 0 0;
+		  display: block;
+		  position: absolute;
+		  left: 50%;
+		  margin-left: -10px;
+		  top: 15px;
+		}
+
+		.byline {
+		  padding-left: 40px;
+		  position: relative;
+		  margin-bottom: 15px;
+		  margin-top: 10px;
+		}
+		.byline .data {
+		  font-weight: 400;
+		}
+		.byline .label {
+		  font-size: 60%;
+		}
+
+		.indented.comment {
+		  padding-left: 15px;
+		  border-left: 1px solid #ebebeb;
+		}
+
+		.push {
+		  margin-bottom: 40px;
+		}
+
+		.bullets {
+		  margin-left: 30px;
+		}
+		
+		.classmate{
+			margin-bottom: 0.8rem;
+		}
+		
+		.ui-helper-hidden-accessible{ display:none }
+		
+		@media screen and (max-width: 40em){
+			h1{
+				font-size: 2rem;
+				margin: 1.5rem 0 1.5rem 0rem;
+			}
+		}

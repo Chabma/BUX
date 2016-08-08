@@ -1,0 +1,186 @@
+<DOCTYPE! HTML>
+
+<html>
+<head>
+	<title> BUX App - login </title>
+	<link rel="stylesheet" href="../foundation-6.2.3-complete/css/foundation.min.css"/>
+	<link rel="stylesheet" href="../foundation-6.2.3-complete/css/app.css"/>
+	<link rel="stylesheet" href="../foundation-icons/foundation-icons.css"/>
+	<script src="../js/vendor/jquery.js"></script>
+	<script src="../js/vendor/foundation.min.js"></script>
+	
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	
+	<style type="text/css">
+		.ui-autocomplete {
+    position: absolute;
+    top: -9999px;
+    list-style: none;
+    margin-left: 0;
+    width: 100%;
+    max-height: none;
+    height: auto;
+    background: #fff;
+    border: solid 1px #ccc;
+    font-size: 16px;
+    z-index: 99;
+    margin-top: 2px;
+    max-width: 200px;
+}
+
+.ui-autocomplete>*:first-child {
+    margin-top: 0;
+}
+
+.ui-autocomplete li {
+    font-size: 0.875em;
+    cursor: pointer;
+    line-height: 1.125em;
+    margin: 0;
+}
+
+.ui-autocomplete li a {
+    display: block;
+    padding: 0.3125em 0.625em;
+    color: #555;
+}
+
+/*
+.ui-autocomplete:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 6px;
+    border-color: transparent transparent #fff transparent;
+    border-bottom-style: solid;
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    z-index: 99;
+}
+
+.f-dropdown:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 7px;
+    border-color: transparent transparent #ccc transparent;
+    border-bottom-style: solid;
+    position: absolute;
+    top: -14px;
+    left: 9px;
+    z-index: 98;
+}*/
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+  line-height: 1.5em;
+  padding-left: 0.5rem;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  line-height: 1.5em;
+  padding-left: 0.5rem;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  line-height: 1.5em;
+  padding-left: 0.5rem;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  line-height: 1.5em;
+  padding-left: 0.5rem;
+}
+
+.find-by{
+	position: relative;
+}
+
+.find-by input{
+	padding-left: 40px;
+}
+
+.find-by i{
+	position: absolute;
+	left: 12px;
+	top: 12px;
+	
+}
+
+	</style>
+	
+</head>
+
+<body>
+
+<div class="row">
+
+  <div class="signin small-12 column">
+
+    <h1> Add classmate </h1>
+
+    <form class="bg-white radius" style="padding: 1.2rem">
+
+	<div class="find-by">
+	  <i class="fi-torso-female" style="color: #ddd"></i>
+      <input id="add-by-name" placeholder="Type student's name" type="text" />
+    </div>
+    
+    <div class="find-by">
+      <i class="fi-book" style="color: #ddd"></i>
+      <input id="add-by-course" placeholder="Type course code" type="text" />
+	</div>
+	
+    <button class="button expanded radius text-center"> Add friend </button>
+
+    </form>
+    
+  </div>
+
+</div>
+
+<footer class="main-nav">
+	<p class="align-bottom text-center">
+		<a href="home.html"><i class="fi-home"></i></a>
+		<a href=""><i class="fi-calendar"></i></a>
+		<a href=""><i class="fi-book"></i></a>
+		<a href=""><i class="fi-torsos-all"></i></a>
+		<a href=""><i class="fi-torso"></i></a>
+	</p>
+</footer>
+
+
+<script>
+
+$(function() {
+var nameTags = [
+"Arnold Schwartz",
+"Amy Adams",
+"Chris Brown",
+"Simon Lee"
+];
+
+$( "#add-by-name" ).autocomplete({ source: nameTags });
+
+var courseTags = [
+"CSC108",
+"CSC396",
+"POL200"
+];
+
+$( "#add-by-course" ).autocomplete({ source: courseTags });
+
+});
+
+</script>
+
+<script>
+document.write('<script src=' + ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') + '.js><\/script>')
+</script>
+
+<script>
+$(document).foundation();
+</script>
+
+</body>
+
+</html>
