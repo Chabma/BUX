@@ -27,10 +27,10 @@
             #middle{
                 background:#fff;
                 width: 94%;
-                padding-left:7%;
-                padding-right: 7%;
+                padding-left:5%;
+                padding-right: 5%;
                 padding-top:5%;
-                margin-bottom: 28%;
+                margin-bottom: 18%;
                 margin-left: 3%;
                 margin-right: 3%;
             }
@@ -64,7 +64,8 @@
                 margin-top:3%;
             }
             #add_task{
-                font-size: 3rem;
+                padding: 10px;
+                font-size: 2.7rem;
                 border-bottom-color: #186aa0;
             }
             #swipe_views{
@@ -81,39 +82,73 @@
                 margin-right:2%;
                 display: inline-block;   
             }
+            h3{
+                font-size:3rem;
+            }
         </style>
     </head>
     <body>
-        <div id="top" class="row">
-            <h1 id="heading">Aaron's Courses</h1>
+        <div style="background:#49cc96;" id="top" class="row">
+            <h1 id="heading">A1b</h1>
         </div>
         
-        <div id="middle" class="row">
+        <div id="middle">
+                <div>
+                <h3>CSC 396</h3>
+                <h3>Due: August 13th</h3>
+                <h3>Auto-Scheduled: No</h3>
+                </div>
+                <ul  style="list-style-type: none;"  class="row">
+                <h2 class="row"><u>Time Slots:</u></h2>
+            <li class="row" style="margin-bottom:2%;">
+                <div class="small-12 small-centered column">
+                    <div id="add_task" class="small-12 button radius" style="border-style: solid; border-color: #000; text-align:left; background:#ffffff; color:#0741e6;" type="button">
+                        <p class="column small-8">August 3rd <br> 3pm - 6pm</p>
+                    </div>
+                </div>
+            </li>
+            <li class="row" style="margin-bottom:2%;">
+                <div class="small-12 small-centered column">
+                    <div id="add_task" class="small-12 button radius" style="border-style: solid; border-color: #000; text-align:left; background:#ffffff; color:#0741e6;" type="button">
+                        <p class="column small-8">August 7th <br> 5pm - 6pm</p>
+                    </div>
+                </div>
+            </li>
+            <li class="row" style="margin-bottom:2%;">
+                <div class="small-12 small-centered column">
+                    <div id="add_task" class="small-12 button radius" style="border-style: solid; border-color: #000; text-align:left; background:#ffffff; color:#0741e6;" type="button">
+                        <p class="column small-8">August 12th <br> 7pm - 11pm</p>
+                    </div>
+                </div>
+            </li>
+                </ul>
+            <ul class="row">
+                <h3 class="row"><u>Friends doing this task:</u></h3>
             <div class="row" style="margin-bottom:2%;">
                 <div class="small-12 small-centered column">
-                    <button id="add_task" class=" small-10 button radius" style="text-align:left; background:#49cc96 ;" type="button">CSC 396</button>
+                    <div id="add_task" class="small-12 button radius" style="border-style: solid; border-color: #4c7bff; text-align:left; background:#ffffff; color:#0741e6;" type="button">
+                       <img src="../images/cam.jpg" style="" class="column small-3 fi-home">
+                        <p style="font-size:4rem" class="column small-8">Cameron Abma</p>
+                    </div>
                 </div>
             </div>
             <div class="row" style="margin-bottom:2%;">
                 <div class="small-12 small-centered column">
-                    <button id="add_task" class=" small-10 button radius" style="text-align:left; background:#cc494f;" type="button">MAT 312</button>
+                    <div id="add_task" class="small-12 button radius" style="border-style: solid; border-color: #4c7bff; text-align:left; background:#ffffff; color:#0741e6;" type="button">
+                       <img src="../images/kelley.jpg" style="" class="column small-3 fi-home">
+                        <p style="font-size:4rem" class="column small-8">Kelley Tai</p>
+                    </div>
                 </div>
             </div>
             <div class="row" style="margin-bottom:2%;">
                 <div class="small-12 small-centered column">
-                    <button id="add_task" class=" small-10 button radius" style="text-align:left; background:#4959cc;" type="button">CSC 404</button>
+                    <div id="add_task" class="small-12 button radius" style="border-style: solid; border-color: #4c7bff; text-align:left; background:#ffffff; color:#0741e6;" type="button">
+                         <img src="../images/victor.jpg" style="" class="column small-3 fi-home">
+                        <p style="font-size:4rem" class="column small-8">Victor Gong</p>
+                    </div>
                 </div>
             </div>
-            <div class="row" style="margin-bottom:2%;">
-                <div class="small-12 small-centered column">
-                    <button id="add_task" class=" small-10 button radius" style="text-align:left; background:#e89d2a;" type="button">CSC 456</button>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom:2%;">
-                <div class="small-12 small-centered column">
-                    <button id="add_task" class=" small-10 button radius" style="text-align:left; background:#dc2ae8;" type="button">ENG 142</button>
-                </div>
-            </div>
+                </ul>
         </div>
         
         <footer class="main-nav" style="height:10%;">
