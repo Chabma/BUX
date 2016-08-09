@@ -13,7 +13,15 @@
                 position:absolute;
                     
             }
-            
+            .today{
+                background:#23bf3e;
+            }
+            .has_task{
+                background:#33ccef;
+                border-radius: 30px;
+                width:50px;
+                text-align: center;
+            }
             #top{
                 height:10%;
                 
@@ -26,18 +34,19 @@
             }
             #middle{
                 background:#fff;
+                height:75%;
                 width: 94%;
                 padding-left:5%;
                 padding-right: 5%;
                 padding-top:5%;
-                margin-bottom: 18%;
+                padding-bottom:7%;
                 margin-left: 3%;
                 margin-right: 3%;
             }
             #month_title{
                 width:100%;
                 text-align: center;
-                background: #23bf3e;
+                background: #b4eeff;
                 height:10%;
                 border-radius: 20px 20px 0px 0px;
             }
@@ -69,12 +78,11 @@
             }
             #swipe_views{
                 width:100%;
-                height:10%;
                 font-size: 4rem;
                 margin:auto;
                 text-align: center;
                 display: inline-block;
-                margin-bottom: 2%;
+                margin-bottom: 4%;
             }
             #swipe_views p{
                 margin-left:2%;
@@ -85,32 +93,73 @@
     </head>
     <body>
         <div id="top" class="row">
-            <h1 id="heading">August 12th</h1>
+            <h1 id="heading">Aaron's Calendar</h1>
         </div>
         
-        <div id="middle">
-                 <div class="row" style="margin-bottom:2%;">
-                <div class="small-11 small-centered column">
-                    <h1><u>Tasks</u></h1>
+        <div id="middle" class="row">
+            <div class="row" style="background:#fff;"id="swipe_views">
+                <p class="column small-5"><u>Calendar</u></p>
+                <a style="color:black;" href="../calendar/ToDo.html" class="column small-5">Tasks-List</a> 
+            </div>
+            <div class="row" style="margin-bottom:7%;">
+                <div class="small-6 small-centered column">
+                    <a href="../calendar/create-task.html" id="add_task" class="small-12 button radius" type="button">New Task</a>
                 </div>
             </div>
-            <div class="row" style="margin-bottom:2%;">
-                <div class="small-11 small-centered column">
-                    <a href="../courses/SpecificTaskMAT312.html" id="add_task" class=" small-12 button radius" style="text-align:left; background:#cc494f;"type="button">Work on A2 <br>MAT 312 <br> Aug 12th 1pm - 2pm</a>
-                </div>
+            <div id="month_title">
+                <a href="Calendar_november.html"style="color:#000; margin-left:3%;float:left; font-size: 3.5rem; display: inline-block;"><</a>
+                <h1 style="display:inline-block;">December</h1>
+                <a href="Calendar_january.html"style="color:#000; margin-right:3%; display:inline-block; float:right; font-size: 3.5rem;">></a>
             </div>
-            <div class="row" style="margin-bottom:2%;">
-                <div class="small-11 small-centered column">
-                    <a href="../courses/SpecificTaskCSC456.html" id="add_task" class=" small-12 button radius" style="text-align:left; background:#e88f21;" type="button">Study for Test 1 <br>CSC 456 <br> Aug 12th 4pm - 6pm</a>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom:2%;">
-                <div class="small-11 small-centered column">
-                    <a href="../courses/SpecificTask.html" id="add_task" class=" small-12 button radius" style="text-align:left; background:#49cc96 ;" type="button">Work on A1b <br>CSC 396 <br> Aug 12th 7pm - 11pm</a>
-                </div>
-            </div>
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td class="next_month">1</td>
+                    <td class="next_month">2</td>
+                    <td class="next_month">3</td>
+                    <td class="next_month">4</td>
+                </tr>
+            </table>
         </div>
-    
+        
         <footer class="main-nav" style="height:10%;">
 	       <p class="align-bottom text-center" style="height:10%;">
 		      <a href="../home/home.html"><i class="fi-home"></i></a>

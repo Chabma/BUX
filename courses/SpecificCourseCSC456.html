@@ -4,6 +4,7 @@
 	    <link rel="stylesheet" href="../foundation-6.2.3-complete/css/foundation.min.css"/>
 	    <link rel="stylesheet" href="../foundation-6.2.3-complete/css/app.css"/>
 	    <link rel="stylesheet" href="../foundation-icons/foundation-icons.css"/>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <style>
             #bottom{
                 width:100%;
@@ -27,8 +28,8 @@
             #middle{
                 background:#fff;
                 width: 94%;
-                padding-left:5%;
-                padding-right:5%;
+                padding-left: 5%;
+                padding-right: 5%;
                 padding-top:5%;
                 margin-bottom: 18%;
                 margin-left: 3%;
@@ -64,7 +65,7 @@
                 margin-top:3%;
             }
             #add_task{
-                font-size: 3rem;
+                font-size: 2.7rem;
                 border-bottom-color: #186aa0;
             }
             #swipe_views{
@@ -84,47 +85,41 @@
         </style>
     </head>
     <body>
-        <div id="top" class="row">
-            <h1 id="heading">Aaron's Courses</h1>
+        <div style="background:#e89d2a;" id="top" class="row">
+            <h1 id="heading">CSC 456</h1>
         </div>
         
-        
-        <div id="middle" class="row">
-                        <div class="row" style="margin-bottom:0%;">
-                <div class="small-6 small-centered column">
-                    <a href="create-task.html" id="add_task" class=" small-12 button radius" type="button">New Course</a>
+        <div id="middle">
+                <ul style="list-style-type: none;" class="row"><h2><u>Assignments:</u></h2>
+                    <li class="row" style="margin-bottom:2%;">
+                <div class="small-12 small-centered column">
+                    <button id="add_task" class=" small-10 button radius" style="text-align:left; background:#aaa;" type="button">A1<br>Due Aug 3rd</button>
                 </div>
-            </div>
-              <div class="row" style="margin-bottom:2%;">
-                <div class="small-11 small-centered column">
-                    <h1><u>Courses</u></h1>
+            </li>
+            <li class="row" style="margin-bottom:2%;">
+                <div class="small-12 small-centered column">
+                    <button id="add_task" class=" small-10 button radius" style="text-align:left; background:#e89d2a;" type="button">Test 1<br>Due Aug 14th</button>
                 </div>
-            </div>
+            </li>
+            <li class="row" style="margin-bottom:2%;">
+                <div class="small-12 small-centered column">
+                    <button id="add_task" class=" small-10 button radius" style="text-align:left; background:#e89d2a;" type="button">A2<br>Due Aug 18th</button>
+                </div>
+            </li>
+                </ul>
+                <ul style="list-style-type: none;" class="row">
+                <h2 class="row"><u>Classmates:</u></h2>
+                    
             <div class="row" style="margin-bottom:2%;">
                 <div class="small-12 small-centered column">
-                    <a href="SpecificCourse.html" id="add_task" class=" small-10 button radius" style="text-align:left; background:#49cc96 ;" type="button">CSC 396</a>
-                </div>
+                    <div id="add_task" class="small-12 button radius" style="padding:10px; border-style: solid; border-color: #4c7bff; text-align:left; background:#ffffff; color:#0741e6;" type="button">
+                        <img src="../images/muki.jpg" style="" class="column small-3 fi-home">
+                        <p style="font-size:3.5rem" class="column small-9">Justa Clasmate</p>
+                        <a onclick="myFunction()" class="add_friend_button button column small-8" style="padding:10px; float:left; font-size:3rem;">Add to Friends</a>
+                    </div>
+                </div> 
             </div>
-            <div class="row" style="margin-bottom:2%;">
-                <div class="small-12 small-centered column">
-                    <a href="SpecificCourseMAT312.html" id="add_task" class=" small-10 button radius" style="text-align:left; background:#cc494f;" type="button">MAT 312</a>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom:2%;">
-                <div class="small-12 small-centered column">
-                    <a href="SpecificCourseCSC404.html" id="add_task" class=" small-10 button radius" style="text-align:left; background:#4959cc;" type="button">CSC 404</a>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom:2%;">
-                <div class="small-12 small-centered column">
-                    <a href="SpecificCourseCSC456.html" id="add_task" class=" small-10 button radius" style="text-align:left; background:#e89d2a;" type="button">CSC 456</a>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom:2%;">
-                <div class="small-12 small-centered column">
-                    <a href="SpecificCourseENG142.html" id="add_task" class=" small-10 button radius" style="text-align:left; background:#dc2ae8;" type="button">ENG 142</a>
-                </div>
-            </div>
+                </ul>
         </div>
         
         <footer class="main-nav" style="height:10%;">
@@ -136,5 +131,11 @@
 		      <a href=""><i class="fi-torso"></i></a>
 	       </p>
         </footer>
+        
+        <script>
+        $( ".add_friend_button" ).click(function() {
+            $( this ).html('<a class="button column small-8" style="text-align:left; background:#fff; color:#1ed20d; padding:10px; float:left; font-size:3rem;">Friends ✓</a>')
+        });
+        </script>
     </body>
 </html>

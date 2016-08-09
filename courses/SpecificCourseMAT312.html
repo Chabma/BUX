@@ -4,6 +4,7 @@
 	    <link rel="stylesheet" href="../foundation-6.2.3-complete/css/foundation.min.css"/>
 	    <link rel="stylesheet" href="../foundation-6.2.3-complete/css/app.css"/>
 	    <link rel="stylesheet" href="../foundation-icons/foundation-icons.css"/>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <style>
             #bottom{
                 width:100%;
@@ -27,7 +28,7 @@
             #middle{
                 background:#fff;
                 width: 94%;
-                padding-left:5%;
+                padding-left: 5%;
                 padding-right: 5%;
                 padding-top:5%;
                 margin-bottom: 18%;
@@ -37,7 +38,7 @@
             #month_title{
                 width:100%;
                 text-align: center;
-                background: #23bf3e;
+                background: #cc494f;
                 height:10%;
                 border-radius: 20px 20px 0px 0px;
             }
@@ -84,47 +85,66 @@
         </style>
     </head>
     <body>
-        <div id="top" class="row">
-            <img src="../images/tiffany.jpg" style="max-height:150px; max-width:150px; margin-left: 20px; margin-top:20px;" class="column small-4">
-            <h1 id="heading">Tiffany Ma</h1>
+        <div style="background:#cc494f;" id="top" class="row">
+            <h1 id="heading">MAT 312</h1>
         </div>
         
         <div id="middle">
-                
-                <ul style="list-style-type: none;" class="row"><h2><u>Mutual Assignments:</u></h2>
+                <ul style="list-style-type: none;" class="row"><h2><u>Assignments:</u></h2>
                     <li class="row" style="margin-bottom:2%;">
                 <div class="small-12 small-centered column">
-                    <button id="add_task" class=" small-10 button radius" style="text-align:left; background:#49cc96 ;" type="button">Work on A1b<br>CSC 396</button>
+                    <button id="add_task" class=" small-10 button radius" style="text-align:left; background:#aaa;" type="button">A1<br>Due July 31st</button>
                 </div>
             </li>
             <li class="row" style="margin-bottom:2%;">
+                <div class="small-12 small-centered column">
+                    <button id="add_task" class=" small-10 button radius" style="text-align:left; background:#aaa;" type="button">Test 1<br>Due Aug 6th</button>
+                </div>
+            </li>
+            <li class="row" style="margin-bottom:2%;">
+                <div class="small-12 small-centered column">
+                    <button id="add_task" class=" small-10 button radius" style="text-align:left; background:#cc494f;" type="button">A2<br>Due Aug 13th</button>
+                </div>
+            </li>
                 </ul>
                 <ul style="list-style-type: none;" class="row">
-                <h2 class="row"><u>Mutual Friends:</u></h2>
-                    
+                <h2 class="row"><u>Classmates:</u></h2>
+
             <div class="row" style="margin-bottom:2%;">
                 <div class="small-12 small-centered column">
                     <div id="add_task" class="small-12 button radius" style="padding:10px; border-style: solid; border-color: #4c7bff; text-align:left; background:#ffffff; color:#0741e6;" type="button">
-                     <img src="../images/dragan.jpg" style="" class="column small-3 fi-home">
-                        <p style="font-size:4rem" class="column small-9">Dragan Soso</p>
+                       <img src="../images/cam.jpg" style="" class="column small-3 fi-home">
+                        <p style="font-size:3.5rem" class="column small-9">Cameron Abma</p>
+                        <a class="button column small-8" style="text-align:left; background:#fff; color:#1ed20d;  padding:10px; float:left; font-size:3rem;">Friends ✓</a>
                     </div>
                 </div>
             </div>
             <div class="row" style="margin-bottom:2%;">
                 <div class="small-12 small-centered column">
                     <div id="add_task" class="small-12 button radius" style="padding:10px; border-style: solid; border-color: #4c7bff; text-align:left; background:#ffffff; color:#0741e6;" type="button">
-                     <img src="../images/cam.jpg" style="" class="column small-3 fi-home">
-                        <p style="font-size:4rem" class="column small-9">Cameron Abma</p>
+                         <img src="../images/victor.jpg" style="" class="column small-3 fi-home">
+                        <p style="font-size:3.5rem" class="column small-9">Victor Gong</p>
+                        <a class="button column small-8" style="text-align:left; background:#fff; color:#1ed20d;  padding:10px; float:left; font-size:3rem;">Friends ✓</a>
                     </div>
                 </div>
             </div>
             <div class="row" style="margin-bottom:2%;">
                 <div class="small-12 small-centered column">
                     <div id="add_task" class="small-12 button radius" style="padding:10px; border-style: solid; border-color: #4c7bff; text-align:left; background:#ffffff; color:#0741e6;" type="button">
-                       <img src="../images/kelley.jpg" style="" class="column small-3 fi-home">
-                        <p style="font-size:4rem" class="column small-9">Kelley Tai</p>
+                        <img src="../images/donald.jpg" style="" class="column small-3 fi-home">
+                        <p style="font-size:3.5rem" class="column small-9">Not Person</p>
+                        <a class=" add_friend_button button column small-8" style="padding:10px; float:left; font-size:3rem;">Add to Friends</a>
                     </div>
-                </div>
+                </div> 
+            </div>
+            <div class="row" style="margin-bottom:2%;">
+                <div class="small-12 small-centered column">
+                    <div id="add_task" class="small-12 button radius" style="padding:10px; border-style: solid; border-color: #4c7bff; text-align:left; background:#ffffff; color:#0741e6;" type="button">
+                        <img src="../images/muki.jpg" style="" class="column small-3 fi-home">
+                        <p style="font-size:3.5rem" class="column small-9">Justa Clasmate</p>
+                        <a class=" add_friend_button button column small-8" style="padding:10px; float:left; font-size:3rem;">Add to Friends</a>
+                    </div>
+                </div> 
             </div>
                 </ul>
         </div>
@@ -133,10 +153,15 @@
 	       <p class="align-bottom text-center" style="height:10%;">
 		      <a href="../home/home.html"><i class="fi-home"></i></a>
 		      <a href="../calendar/Calendar.html"><i class="fi-calendar"></i></a>
-		      <a href="../courses/MyCourses.html"><i class="fi-book"></i></a>
-		      <a href="../friends/MyFriends.html"><i class="fi-torsos-all active-icon"></i></a>
+		      <a href="../courses/MyCourses.html"><i class="fi-book active-icon"></i></a>
+		      <a href="../friends/MyFriends.html"><i class="fi-torsos-all"></i></a>
 		      <a href=""><i class="fi-torso"></i></a>
 	       </p>
         </footer>
+         <script>
+        $( ".add_friend_button" ).click(function() {
+            $( this ).html('<a class="button column small-8" style="text-align:left; background:#fff; color:#1ed20d; padding:10px; float:left; font-size:3rem;">Friends ✓</a>')
+        });
+        </script>
     </body>
 </html>
